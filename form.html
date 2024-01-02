@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Regestration Form</title>
+        <link rel="stylesheet" href="form.css"/>
+    </head>
+    <body >
+        <h1>Registration form</h1>
+        <p>Fill the form with correct information</p>
+        <form method="post">
+            <fieldset>
+                <label for="First-name">Enter your First name:<input id="First-name" name="First-name" type="text" required/></label>
+                <label for="Last-name">Enter your last name:<input id="Last-name" name="Last-name" type="text" required/></label>
+                <label for="email">Enter your email id:<input id="email" name="email" type="email" required/></label>
+                <label for="password">Create a new password:<input id="password" name="password" type="password" pattern="[a-z0-5]{8,0}"/></label>
+            </fieldset>
+            <fieldset>
+                <legend>What should i post more ?</legend>
+                <label for="long"><input id="long" type="radio" name="video-type" class="inline" checked/>Long length videos(3-8mins)</label>
+                <label for="Shorts"><input id="Shorts" type="radio" name="video-type" class="inline"/>Shorts(60sec>)</label>
+            </fieldset>
+            <fieldset>
+                <label>Upload a photo: <input type="file"/></label>
+                <label>Input your age<input type="number" min="13" max="120"/></label>
+                <label for="more-data">What content you want to see more in upcoming video<select id="more-data" name="next video">
+                    <option value="">(SELECT ONE)</option>
+                    <option value="1">Advanced Webpage design</option>
+                    <option value="2">Pop up animations</option>
+                    <option value="3">Tips and tricks</option>
+                    <option value="4">Gameplays</option>
+                </select> 
+            </label>
+            </fieldset>
+            <input type="submit" value="submit"/>
+        </form>
+    </body>
+</html>
